@@ -88,9 +88,6 @@ describe('GET /todos', () => {
 });
 
 describe('GET /todos/:id', () => {
-// invalid id, 404
-// valid id, no doc 404
-// valid, doc 200, response body
     it('should return todo doc', done => {
         request(app)
             .get(`/todos/${todos[0]._id.toHexString()}`)
